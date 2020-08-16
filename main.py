@@ -36,8 +36,8 @@ if __name__ == "__main__":
 
     async def main():
         bot_app.on(bot.OpCodeEvent.DISPATCH, on_dispatch)
-        await bot_app.start_with_password('name#xxxx', 'xxx')
-        # await bot_app.start('your.bot.token')
+        # await bot_app.start_with_password('name#xxxx', 'xxx')
+        await bot_app.start('your.bot.token')
 
     loop = asyncio.get_event_loop()
     loop.run_until_complete(main())
